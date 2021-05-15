@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Lato, sans-serif;
+        }
+
+        .title {
+            font-family: Yeseva One, serif;
+            color: white;
+            font-size: 56px;
+            display: inline;
+            margin: 0;
+        }
+
+        .vertical-title {
+            font-family: Lato, sans-serif;
+            font-size: 30px;
+            margin: 0;
+            writing-mode: vertical-lr;
+            text-orientation: mixed;
+            display: inline-block;
+            position: relative;
+        }
+
+        hr {
+            margin: 50px 0 0 0;
+            border: 1px white solid;
+            width: 100%;
+            height: 0;
+        }
+
+        .text-bloc {
+            padding: 10px 25px;
+            font-family: Lato, sans-serif;
+            color: white;
+            font-size: 14px;
+        }
+
+        /* SECTION MUSIQUE */
+        .music-bloc {
+            border-radius: 10px;
+            padding: 0;
+            border: 3px solid ;
+            height: 175px;
+        }
+        .music-bloc-left {
+            margin: 3% 5% 3% 15%;
+        }
+        .music-bloc-right {
+            margin: 3% 15% 3% 5%;
+        }
+
+
+        .music-img {
+            max-height:175px;
+            display: inline-block;
+            vertical-align: middle
+        }
+
+        .music-img-left {
+            border-radius: 10px 0 0 10px;
+        }
+
+        .music-img-right {
+            border-radius: 0 10px 10px 0;
+            position: relative;
+            right: -6px;
+        }
+
+        .music-text {
+            display: inline-block;
+            max-width: 60%;
+            vertical-align: middle;
+            margin: auto 20px;
+        }
+
+        .music-text span {
+            font-weight: bold;
+        }
+
+        .img-above {
+            display: inline-block;
+            position: relative;
+            z-index: 2;
+        }
+
+        .text-emphasized {
+            font-weight: bold;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            border: 1px solid white;
+            padding: 10px 20px;
+        }
+        a:hover{
+            background-color: #3A963B;
+        }
+
+        li {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+<div style="background-color: #32312f; margin:0; width: 700px;">
+    <div style="border-bottom: 2px solid #474747;  height: 314px">
+        <div style="display: inline-block" >
+            <img alt="Logo de la newsletter du BDA" src="cid:b7b76f3f59884fc8be014e5a902c9f7c92adacc3@zimbra" dfsrc="cid:b7b76f3f59884fc8be014e5a902c9f7c92adacc3@zimbra" style="width: 440px; position: relative;top: 3px">
+
+        </div>
+        <div class="text-bloc" style="position: relative; color: white; top:-250px; left: 42%">
+            <h1>Au programme :</h1>
+            <ul>
+                <li>Cinéma : 2 séries à voir</li>
+                <li>Musique : Sorties récentes et coups de coeur</li>
+                <li>Culture : Architecture et sculpture</li>
+                <li>Littérature : BD et article </li>
+            </ul>
+        </div>
+    </div>
+    <!-- SECTION CINÉMA -->
+    <div style="display: flex; width: 700px">
+        <h1 class="title">cinéma</h1>
+        <hr/>
+    </div>
+    <div style="display: grid; grid-template-columns: 50% 50%;">
+        <!-- CINEMA 1 : FLEABAG -->
+        <div>
+            <div>
+                <img alt="Affiche de la série Fleabag" class="img-above" src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/763c0d632cc2e7b97733528c8691529ded913b45b6741dfb99b884fc7c589d83._RI_V_TTW_.jpg"
+                     style="width: 75%; top: -13px; float: left;">
+            </div>
+            <div class="text-bloc"
+                 style="background-color: #45b646; position: relative; width: 65%; left: 40px; top:-13px;">
+                <p class="text-emphasized" style="margin-top: 200px;">Amazon Original</p>
+                <p class="text-emphasized">Style : Comédie</p>
+                <p>Le quotidien à la fois drôle et touchant de Fleabag, une femme à la répartie cinglante, portée sur le
+                    sexe, en colère et assaillie par le deuil, qui fait ce qu'elle peut pour survivre à la vie moderne
+                    londonienne.</p>
+            </div>
+        </div>
+        <!-- CINEMA 2 : PALM SPRINGS -->
+        <div>
+            <div>
+                <img alt="Affiche du film Palm Strings" class="img-above" src="https://oblikon.net/wp-content/uploads/palm_springs_affiche.jpg"
+                     style="width: 100%; float: right;">
+            </div>
+            <div class="text-bloc"
+                 style="background-color: #258460; position: relative; width: 70%; left: 40px; top:-13px; ">
+                <p class="text-emphasized" style="margin-top: 220px">Amazon Exclusive</p>
+                <p class="text-emphasized">Style : Comédie, Romance</p>
+                <p>L'insouciant Nyles fait la connaissance, lors d'un mariage à Palm Springs, de Sarah, soeur de la
+                    mariée et demoiselle d'honneur. Les choses se compliquent rapidement lorsque le duo se retrouve
+                    piégé dans l'espace-temps de ce mariage, contraint de revivre encore et encore la même journée.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION MUSIQUE -->
+    <div style="display: flex; width: 700px; position: relative; top:-20px;">
+        <h1 class="title">musique</h1>
+        <hr/>
+    </div>
+
+    <div style="margin-bottom: 130px;">
+        <div style="width: 100%;margin: auto">
+            <!-- La Femme -->
+            <div class="text-bloc music-bloc music-bloc-left" style="background-color: #258460; border-color: #206E51; margin-top: 0">
+                <img class="music-img music-img-left" alt="Pochette de l'album Paradigmes de La Femme" src="https://static.fnac-static.com/multimedia/Images/FR/NR/4e/79/c9/13203790/1540-1/tsp20210113081152/Paradigmes.jpg">
+                <div class="music-text">
+                    <h2>La Femme</h2>
+                    <p>La Femme a sorti un nouvel album <span>Paradigmes</span> le 02/04/2021.</p>
+                    <p style="font-style: italic">Style : New Waves</p>
+                </div>
+            </div>
+
+            <!-- Kölsch -->
+            <div class="text-bloc music-bloc music-bloc-right" style="background-color: #45b646;border-color: #3A963B">
+                <div class="music-text">
+                    <h2>Kölsch</h2>
+                    <p>Le danois Kölsch a sorti aussi un album <span>Isopolis</span> le 12/03/2021.</p>
+                    <p style="font-style: italic">Style : Électro (progressive/ambiance sur cet album)</p>
+                </div>
+                <img class="music-img music-img-right" alt="Pochette de l'album Isopolis de Kölsch" src="https://s3.amazonaws.com/media.kompakt.fm/01/assets/releases/original/ipso005d-isopolis.jpg">
+            </div>
+
+            <!-- Mac Miller -->
+            <div class="text-bloc music-bloc music-bloc-left" style="background-color: #258460;border-color: #206E51">
+                <img class="music-img music-img-left" alt="Pochette de l'album Circles de Mac Miller" src="https://images-na.ssl-images-amazon.com/images/I/51tqBxP5lNL._SL1200_.jpg">
+                <div class="music-text">
+                    <h2>Mac Miller</h2>
+                    <p>L'album posthume <span>Circles</span> du regretté Mac Miller sorti le 17/01/2020.</p>
+                    <p style="font-style: italic">Style : Hip hop, funk</p>
+                </div>
+            </div>
+
+            <!-- Balthazar -->
+            <div class="text-bloc music-bloc music-bloc-right" style="background-color: #45b646; border-color: #3A963B">
+                <div class="music-text">
+                    <h2>Balthazar</h2>
+                    <p>Les flamands de chez Balthazar ont sorti leur 5ème album <span>Sand</span>, le 29/01/2021.</p>
+                    <p style="font-style: italic">Style : Indie rock, indie pop</p>
+                </div>
+                <img class="music-img music-img-right" alt="Pochette de l'album Sand de Balthazar" src="https://m.media-amazon.com/images/I/81bHlPmpKeL._SS500_.jpg">
+                <div style="position:relative;background-color: #3A963B; width: 80%; padding: 15px; margin: auto 8%; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px">
+                    <p style="margin: 0">Fun fact : la couverture est une sculpture de l'artiste hollandaise Magriet Van Breevort et elle symbolise quelqu'un qui attend en salle d'attente chez le médecin. On peut y voir un rapport avec la crise sanitaire, ou pas...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION CULTURE -->
+    <div style="display: flex; width: 700px; position: relative; top:-20px;">
+        <h1 class="title">culture</h1>
+        <hr/>
+    </div>
+    <div>
+        <div style="display: grid; grid-template-columns: 55% 45%;">
+            <div class="text-bloc" style="display: inline; position: relative; top:-20px;">
+                <h2 style="color: #258460;margin-top: 0">ARCHITECTURE</h2>
+                <h3>Tour Trinity</h3>
+                <p>La tour qui embellit la Défense.
+                    Les architectes de Cro&Co ont fait le choix audacieux de bâtir l’édifice sur du vide, au-dessus du boulevard circulaire.
+                </p>
+                <p style="font-style: italic">La tour Trinity (au centre), à la Défense (Hauts-de-Seine). ZYLBERMAN</p>
+
+                <h2 style="color: #45b646;margin-top: 0">SCULPTURE</h2>
+                <h3>Le Chat</h3>
+                <p>Le Chat de Philippe Geluck prend l’air sur les Champs-Elysées.</p>
+                <p>L’artiste belge expose sur la célèbre artère parisienne vingt sculptures monumentales en bronze à l’effigie de son animal fétiche.</p>
+            </div>
+            <img alt="Tour Trinity" class="img-above" src="https://img.lemde.fr/2021/03/23/0/0/2550/3300/664/0/75/0/5640df8_60641591-2375-256-2-zylberman.jpg"
+                 style="width: 100%; position: relative; top: -33px;">
+        </div>
+        <div>
+            <img alt="Philippe Geluck pose à côté d'une sculpture du Chat" src="https://img.lemde.fr/2021/03/26/157/0/1280/640/1440/720/60/0/2a3f36d_504542194-dsc7630-studio-fiftyfifty.jpeg"
+                 style="width: 100%; position: relative; top: -33px;">
+        </div>
+
+    </div>
+
+    <!-- SECTION LITTÉRATURE -->
+    <div style="display: flex; width: 700px; position: relative; top:-20px;">
+        <h1 class="title">littérature</h1>
+        <hr/>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 50% 50%; position: relative; top: -33px">
+
+        <!-- LITT. 1 : BD -->
+        <div style="background-color: #258460;">
+            <div class="text-bloc" >
+                <h2  style="color: #45b646;">BANDE DESSINÉE</h2>
+
+                <h3>Palais Bourbon, les coulisses de l'Assemblée nationale - Kokopello</h3>
+                <p>L'Assemblée nationale, comment ça marche ? C'est à cette question que répond Kokopello après une
+                    vaste enquête au Palais-Bourbon, qui consista aussi à suivre des députés dans leur réalité
+                    quotidienne. L'auteur décrypte et montre le fonctionnement de l'institution que tout le monde pense
+                    connaître. Travail en commission, en circonscription, débat, coulisses, organisation, équipements,
+                    rien n'a échappé à l'œil et au crayon acérés de Kokopello.
+                </p>
+            </div>
+        </div>
+
+        <!-- LITT. 2 : ARTICLE -->
+        <div style="background-color: #45b646;">
+            <div class="text-bloc">
+                <h2 style="color: #258460;">ARTICLE</h2>
+
+                <h3>Peut-on réindustrialiser la France ? AZF, Lubrizol, besoin ou/et danger ? - Alain Audier et
+                    Jean-Claude Cheinet
+                </h3>
+                <p>Après la crise sanitaire, la pénurie de masques et de respirateurs, faut-il encore démontrer qu’un
+                    pays nécessite une industrie solide, à même de satisfaire les besoins de sa population ? Mais la
+                    distance est grande du besoin à la réalité…
+                </p>
+                <div  style="text-align: center;margin-top: 30px;" >
+                    <a target="_blank" href="https://revue-progressistes.org/2021/03/19/azf-lubrizol-besoin-ou-et-danger-alain-audier-et-jean-claude-cheinet/">
+                        LIEN
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-bloc" style="border-top: 2px solid #474747; position: relative; top:-35px; text-align: center; color: #626262;">
+        <p style="position: relative; top: 15px">Newsletter du BDA de l'IG2I - Avril 2021</p>
+        <p style="margin-bottom: 0;position: relative; top: 5px">Nous contacter : bda.ig2i@gmail.com</p>
+    </div>
+
+</div>
+</body>
+</html>
