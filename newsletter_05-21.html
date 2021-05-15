@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Lato, sans-serif;
+        }
+
+        .title {
+            font-family: Yeseva One, serif;
+            color: white;
+            font-size: 56px;
+            display: inline;
+            margin: 0;
+        }
+
+        .vertical-title {
+            font-family: Lato, sans-serif;
+            font-size: 30px;
+            margin: 0;
+            writing-mode: vertical-lr;
+            text-orientation: mixed;
+            display: inline-block;
+            position: relative;
+        }
+
+        hr {
+            margin: 50px 0 0 0;
+            border: 1px white solid;
+            width: 100%;
+            height: 0;
+        }
+
+        .text-bloc {
+            padding: 10px 25px;
+            font-family: Lato, sans-serif;
+            color: white;
+            font-size: 14px;
+        }
+
+        /* SECTION MUSIQUE */
+        .music-bloc {
+            border-radius: 10px;
+            padding: 0;
+            border: 3px solid ;
+            height: 175px;
+        }
+        .music-bloc-left {
+            margin: 3% 5% 3% 15%;
+        }
+        .music-bloc-right {
+            margin: 3% 15% 3% 5%;
+        }
+
+
+        .music-img {
+            max-height:175px;
+            display: inline-block;
+            vertical-align: middle
+        }
+
+        .music-img-left {
+            border-radius: 10px 0 0 10px;
+        }
+
+        .music-img-right {
+            border-radius: 0 10px 10px 0;
+            position: relative;
+            right: -6px;
+        }
+
+        .music-text {
+            display: inline-block;
+            max-width: 60%;
+            vertical-align: middle;
+            margin: auto 20px;
+        }
+
+        .music-text span {
+            font-weight: bold;
+        }
+
+        .img-above {
+            display: inline-block;
+            position: relative;
+            z-index: 2;
+        }
+
+        .text-emphasized {
+            font-weight: bold;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            border: 1px solid white;
+            padding: 10px 20px;
+        }
+        a:hover{
+            background-color: #3A963B;
+        }
+
+        li {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+<div style="background-color: #32312f; margin:0; width: 700px;
+            height: 4018px;">
+    <div style="border-bottom: 2px solid #474747;  height: 314px">
+        <div style="display: inline-block" >
+            <img alt="Logo de la newsletter du BDA" src="logo_v0-4.png" style="width: 440px; position: relative;top: 3px">
+
+        </div>
+        <div class="text-bloc" style="position: relative; color: white; top:-250px; left: 35%">
+            <h1>Au programme :</h1>
+            <ul>
+                <li>Cinéma : Film et série coups de coeur</li>
+                <li>Musique : Sorties récentes et hommage</li>
+                <li>Culture : Le bassin minier, une histoire empreinte du territoire</li>
+                <li>Littérature : BD et roman engagés</li>
+                <li>Arts plastiques : Découverte d'artistes sculpteurs</li>
+            </ul>
+        </div>
+    </div>
+    <!-- SECTION CINÉMA -->
+    <div style="display: flex; width: 700px">
+        <h1 class="title">cinéma</h1>
+        <hr/>
+    </div>
+    <div style="">
+        <!-- CINEMA 1 : The father -->
+        <div>
+            <div>
+                <img alt="Affiche du film The Father"
+                     class="img-above"
+                     src="https://fr.web.img3.acsta.net/c_310_420/pictures/21/03/15/16/00/1073946.jpg"
+                     style="width: 30%; top: -13px; float: left; margin-left: 20px">
+            </div>
+            <div class="text-bloc"
+                 style="background-color: #45b646; position: relative; width: 90%; text-align: justify">
+                <p style=" margin-left: 220px;"><span class="text-emphasized">The Father</span> de Florian Zeller (2020)</p>
+                <p style=" margin-left: 220px;">Anthony a bientôt 80 ans. Il vit seul dans son appartement de Londres et
+                    refuse toutes les aides-soignantes que sa fille, Anne, tente de lui
+                    imposer. Cette dernière y voit une nécessité d’autant plus grande qu’elle
+                    ne pourra plus passer le voir tous les jours : elle a en effet pris la
+                    décision de partir vivre à Paris pour s’installer avec l’homme qu’elle
+                    vient de rencontrer… </p>
+                <p style=" margin-left: 220px;">Le 25 avril, il recueille deux Oscars : celui du meilleur scénario adapté
+                    pour Christopher Hampton et Florian Zeller ; celui du meilleur acteur pour
+                    Anthony Hopkins.</p>
+            </div>
+        </div>
+        <!-- CINEMA 2 : The Handmaid's Tale -->
+        <div style="margin-top:50px">
+            <div>
+                <img alt="Affiche de la série The Handmaid's Tale"
+                     class="img-above"
+                     src="https://leserigraphe.com/wp-content/uploads/2021/02/The-Handmaids-Tale.jpg"
+                     style="width: 45%; float: right; top: -35px">
+            </div>
+            <div class="text-bloc"
+                 style="background-color: #258460;
+                 position: relative;
+                 width: 80%; left: 40px; top:-13px;
+                 text-align: justify">
+                <p><span class="text-emphasized">The Handmaid's Tale</span> - Saison 4 (Avril 2021)</p>
+                <p style="margin-bottom: 0; width: 55%">Dans un futur proche, où la pollution radioactive a entraîné la
+                    stérilité de la plupart des femmes, les Etats-Unis sont devenus la
+                    République de Gilead. Après un coup d'Etat, un groupe d'hommes fanatisés
+                    a pris le pouvoir et installé un gouvernement théocratique qui a aboli
+                    tous les  </p>
+                <p style="margin-top: 0">droits des femmes. Dorénavant, celles-ci sont réparties en trois castes, les Epouses, les Martha et les Servantes. Seules femmes susceptibles
+                    d'enfanter, les Servantes sont des esclaves uniquement utilisées pour la
+                    reproduction. DeFred est l'une d'elle. Autrefois appelée June, mariée et
+                    mère d'une fillette, elle a été donnée au Commandant Waterford et à son épouse.
+                </p>
+                <p>Après une saison 3 assez faible en terme d’intrigues, le ras-le-bol de
+                    certain·es devant l’aspect “torture porn” de la série et son discours
+                    biologisant autour de la maternité, “The Handmaid’s Tale” s’était
+                    presque faite oublier. Et pourtant, après ces deux années d’absence,
+                    la quatrième saison s’avère étonnamment bouleversante et politique. </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION MUSIQUE -->
+    <div style="display: flex; width: 700px; position: relative; top:-20px;">
+        <h1 class="title">musique</h1>
+        <hr/>
+    </div>
+
+    <div style="margin-bottom: 50px;">
+        <div style="width: 100%;margin: auto">
+            <!-- Rover -->
+            <div class="text-bloc music-bloc music-bloc-left" style="background-color: #258460; border-color: #206E51; margin-top: 0">
+                <img class="music-img music-img-left" alt="Pochette de l'album Eiskeller de Rover" src="http://rover-music.com/img/ROVER_Eiskeller.jpg">
+                <div class="music-text">
+                    <h2>Rover</h2>
+                    <p>Rover sort son troisième album <span>Eiskeller</span> ce mois-ci.</p>
+                    <p style="font-style: italic">Style : Pop</p>
+                </div>
+            </div>
+
+            <!-- Bob Marley -->
+            <div class="text-bloc music-bloc music-bloc-right" style="background-color: #45b646;border-color: #3A963B">
+                <div class="music-text">
+                    <h2>Bob Marley</h2>
+                    <p>À l'occasion des 40 ans de la disparition de Bob Marley, la rédaction vous propose de découvrir ou redécouvrir l'album <span>Uprising</span> de Bob Marley & The Wailors paru en 1980.</p>
+                    <p style="font-style: italic">Style : Reggae</p>
+                </div>
+                <img class="music-img music-img-right" alt="Pochette de l'album Uprising de Bob Marley & The Wailors" src="https://upload.wikimedia.org/wikipedia/en/0/0a/BobMarley%26theWailersUprising.jpg">
+            </div>
+
+            <!-- MYD -->
+            <div class="text-bloc music-bloc music-bloc-left" style="background-color: #258460;border-color: #206E51">
+                <img class="music-img music-img-left" alt="Pochette de l'album Born A Loser de MYD" src="https://www.bewaremag.com/wp-content/uploads/2021/02/Myd_Born-A-Loser.jpg">
+                <div class="music-text">
+                    <h2>MYD</h2>
+                    <p>MYD a sorti un nouvel album <span>Born A Loser</span> le 30/04/2021.</p>
+                    <p style="font-style: italic">Style : Électro, House</p>
+                </div>
+            </div>
+
+            <!-- L'impératrice -->
+            <div class="text-bloc music-bloc music-bloc-right" style="background-color: #45b646; border-color: #3A963B">
+                <div class="music-text">
+                    <h2>L'impératrice</h2>
+                    <p>Le groupe L'impératrice a sorti son nouvel album le 26/03/2021, <span>Tako Tsubo</span>.</p>
+                    <p style="font-style: italic">Style : Électro, Pop, Disco</p>
+                </div>
+                <img class="music-img music-img-right" alt="Pochette de l'album Tako Tsubo de L'impératrice" src="https://static.fnac-static.com/multimedia/Images/FR/NR/ed/27/c9/13182957/1540-1/tsp20210106092434/Tako-Tsubo.jpg">
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION CULTURE -->
+    <div style="display: flex; width: 700px; position: relative; top:-20px;">
+        <h1 class="title">culture</h1>
+        <hr/>
+    </div>
+    <div>
+        <div style="display: grid; grid-template-columns: 55% 45%;">
+            <div class="text-bloc" style="display: inline; position: relative; top:-20px;">
+                <h2 style="color: #258460;margin-top: 0">BASSIN MINIER</h2>
+                <h3>Le parc des îles</h3>
+                <p>
+                    La Cokerie de Drocourt, ancien site minier mis en service en 1930, est devenue au fil des années l’une des plus grandes d’Europe.
+                    En 2004, la cokerie est entièrement démantelée et la dépollution partielle est entreprise par Charbonnages de France.
+                    En 2006, la Communauté d’Agglomération Hénin-Carvin envisage alors une reconversion de cette friche de 160 hectares en un parc paysager qui participera à une nouvelle perception du bassin minier.
+                </p>
+                <p style="font-style: italic">1573 boulevard des Frères Leterme à Hénin-Beaumont ou 18 rue Georges Capelle à Drocourt</p>
+            </div>
+            <img alt="Le parc des îles" class="img-above" src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.6435-9/176623829_1633188203554018_8573406535965478439_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=a26aad&_nc_ohc=JV6C3CM1sAIAX8kValN&_nc_oc=AQmCpSmcx7MFdvD2hfCuLKBeJomP8WtFLFCJtYVVjkgeGi9vtBwj5v9dbfAk8eczDhtZ6gjZcGYNKYXrA20cHrK9&_nc_ht=scontent-cdg2-1.xx&oh=d2f86a8ff888f5403c3f3fc2762b985a&oe=60C3A2BF"
+                 style="width: 100%; position: relative; top: -33px;">
+        </div>
+
+    </div>
+
+    <!-- SECTION LITTÉRATURE -->
+    <div style="display: flex; width: 700px; position: relative; top:-20px;">
+        <h1 class="title">littérature</h1>
+        <hr/>
+    </div>
+
+    <div style="position: relative; top: -33px">
+
+        <!-- LITT. 1 : BD -->
+        <div style="background-color: #258460;margin-right: 0">
+            <div class="text-bloc" style="width:55%;">
+                <h2  style="color: #45b646;margin-top: 7px">BANDE DESSINÉE</h2>
+
+                <h3>Une histoire du nationalisme corse - Hélène Constanty, Benjamin Adès
+                </h3>
+                <p>Lors des élections territoriales en 2015, l'assemblée corse assiste pour la première fois à la
+                    victoire d'une liste nationaliste qui réunit plusieurs groupes autonomistes. Un coup de
+                    tonnerre qui ne relève en rien du hasard et qui réveille un sentiment profond d'identité
+                    corse qui s'est construit, souvent dans la violence, depuis bien longtemps.
+                </p>
+                <p style="margin-bottom: 7px">Sous le trait efficace de Benjamin Adès, la journaliste Hélène Constanty revient sur ces
+                    événements et raconte, sous forme d'un véritable documentaire, les principales étapes qui
+                    ont abouti à cette situation - dont l'assassinat du préfet Erignac en 1998 - sur fond de
+                    règlements de comptes et de dérives parfois mafieuses d'un mouvement incontrôlable et
+                    lui-même divisé, le FLNC.</p>
+            </div>
+            <img style="max-height: 366px; position: absolute; right:0; top: 0" alt="Couverture de la BD Une histoire du nationalisme corse" src="https://bdi.dlpdomain.com/album/9782205079906-couv.jpg ">
+        </div>
+
+        <!-- LITT. 2 : ARTICLE -->
+        <div style="background-color: #45b646;">
+            <img style="max-height: 247px; display: inline-block; position: absolute; left:0; top: 366px" alt="Couverture de la BD Une histoire du nationalisme corse" src=" https://www.babelio.com/couv/CVT_A-la-ligne-Feuillets-dusine_3309.jpg">
+
+            <div class="text-bloc" style="width:70%; margin-left: 21%">
+                <h2 style="color: #258460; margin-top: 7px">ROMAN</h2>
+
+                <h3>A la ligne - Joseph Ponthus
+                </h3>
+                <p style="margin-bottom: 7px">
+                    Sans virgule ni point, les mots les uns après les autres...
+                </p>
+                <p>
+                    Et retour à la ligne.
+                    Il a poussé la porte de l’agence d’intérim et s’est retrouvé «à la ligne» de production dans une usine de conditionnement de crustacés, puis dans un abattoir.
+                </p>
+                <p>
+                    A la ligne pour chaque phrase.
+                    A la ligne pour maintenir la production.
+                </p>
+                <p>
+                    Les mots de l’auteur nous amènent à entendre l’épuisement, les cadences éreintantes, les corps douloureux, le temps qui n’en finit pas de minutes et d’heures semblables. Joseph Pinthus a ponctué son texte de citations d’auteurs ou chanteurs qui l’aident à tenir le coup.
+                    Un livre rare sur le monde ouvrier et les sites industriels.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION ARTS PLASTIQUES -->
+    <div style="display: flex; width: 700px; position: relative; top:-20px; z-index: 12" >
+        <h1 class="title">arts plastiques</h1>
+        <hr style="width: 253px"/>
+    </div>
+
+    <div style="position: relative; top: -21px">
+        <!-- Hopare -->
+        <div>
+            <img alt="Sculpture de Hopare" class="img-above" src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.6435-9/171452303_303925827769172_5279517975538870985_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=730e14&_nc_ohc=jCaHWtAdix0AX-IV-6d&_nc_ht=scontent-cdg2-1.xx&oh=912d3cb35befbeaa466b07cb474365c0&oe=60B61C9B"
+                 style="width: 45%; top: -13px; float: left; position: absolute">
+            <div class="text-bloc"
+                 style="background-color: #45b646; position: relative; width: 85%; left: 40px; top:-13px; height: 190px">
+                <p class="text-emphasized" style="margin-left: 46%">Projet "Dissociation du visage d'avec son enveloppe" - Hopare</p>
+                <p style="margin-left: 46%">Hopare, plasticien et street artist, a réalisé 5 sculptures exposées dans la rue. Si vous avez la chance de passer devant le musée du Louvre à Paris avant le 30 mai, vous les apercevrez peut-être.</p>
+                <div  style="text-align: center;margin-top: 30px; margin-left: 45%" >
+                    <a target="_blank" href="https://www.hopare.com/">
+                        EN SAVOIR PLUS
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- -->
+        <div style="display: grid; grid-template-columns: 50% 50%; position: relative; margin-top: 75px">
+            <div style="">
+                <div class="text-bloc" style="padding-top: 0;background-color: #45b646;">
+                    <img style="width: 100%; position: relative;top: -15px" alt="Sculpture de Claire Lindner" src="https://images.squarespace-cdn.com/content/5ae6e51750a54f28cad7e942/1615282575914-85DLFGRHQ1V9R1Q3M9JT/untangling+in+purple+2019+h45x36x25cm+collection+particuli%C3%A8re+courtoisie+galerie+de+l%27ancienne+poste+copy100.jpg?content-type=image%2Fjpeg">
+                    <p class="text-emphasized" style="margin-top: 0">Untangling in purple (2019) - Claire Lindner</p>
+                    <p>Claire Lindner est une céramiste française, elle réalise des œuvres originales aux formes courbes et aux couleurs acidulées sur le thème “L’air est une racine”. Elle expose actuellement à la Galerie de l’Ancienne Poste à Toucy.</p>
+                    <div  style="text-align: center;margin-top: 30px; margin-bottom: 15px" >
+                        <a target="_blank" href="https://www.clairelindner.com">
+                            EN SAVOIR PLUS
+                        </a>
+                    </div>
+                </div>
+                <div class="text-bloc" style="border-top: 2px solid #474747; border-right: 2px solid #474747; position: relative; text-align: center; color: #626262; height: 213px">
+                    <p style="position: relative; margin-top: 80px">Newsletter du BDA de l'IG2I - Mai 2021</p>
+                    <p style="margin-bottom: 0;">Nous contacter : bda.ig2i@gmail.com</p>
+                </div>
+            </div>
+            <div style="background-color: #258460;">
+                <div class="text-bloc" >
+                    <img style="width: 100%; position: relative;top: -85px" alt="Sculpture de Ru Xiofan" src="http://ruxiaofan.com/wp-content/uploads/2018/04/Porcelaine1.22Ode-de-la-jenesse22-50x30x18cm-2012.jpg">
+                    <p class="text-emphasized" style="margin-top: -65px">Ode de la Jeunesse (2012) - Ru Xiofan</p>
+                    <p>Ru Wiofan est un artiste contemporain chinois, arrivé en France en 1983, il étudie aux Beaux-Arts de Paris et continuera sa carrière dans cette même ville. Artiste aux multiples facettes, il réalise aussi bien des peintures que des sculptures.</p>
+                    <div  style="text-align: center;margin-top: 30px; margin-bottom: 15px" >
+                        <a target="_blank" href="https://ruxiaofan.com/ ">
+                            EN SAVOIR PLUS
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</div>
+</body>
+</html>
